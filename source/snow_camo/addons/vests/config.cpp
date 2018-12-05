@@ -7,7 +7,7 @@ https://github.com/enxyo/arma3-snow-camo
 // Header class
 class CfgPatches
 {
-	class a3_snow_camo_headgear
+	class a3_snow_camo_vests
 	{
 		// Meta information for editor
 		name = "A3 Snow Camo";

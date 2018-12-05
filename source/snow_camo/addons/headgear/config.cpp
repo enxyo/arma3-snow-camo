@@ -18,7 +18,7 @@ class CfgPatches
 		requiredVersion = 1.86; 
 		// Required addons, used for setting load order.
 		// When any of the addons is missing, pop-up warning will appear when launching the game.
-		requiredAddons[] = {"A3_Characters_F"};
+		requiredAddons[] = {"A3_Characters_F","A3_Characters_F_Exp"};
 		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content unlocking.
 		units[] = {};
 		// List of weapons (CfgWeapons classes) contained in the addon.
@@ -112,4 +112,89 @@ class CfgWeapons
 			};
 		};
 	};
+};
+
+class cfg Glasses
+{
+    class None;
+	
+	// Stealth Balaclava (Arctic)
+    class G_Balaclava_TI_arctic: None
+    {
+        author = "enxyo";
+		_generalMacro="G_Balaclava_TI_arctic";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+        displayname = "Stealth Balaclava (Arctic)";
+        model = "\A3\Characters_F_Exp\BLUFOR\G_Balaclava_TI_F.p3d";
+        picture = "\A3\Characters_F_Exp\BLUFOR\Data\UI\icon_G_Balaclava_TI_tna_F_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\headgear\data\g_balaclava_ti_arctic.paa"
+		};
+        identityTypes[] = {};
+        mass = 6;
+		DLC="Expansion";
+    };
+
+	// Bandanna (Arctic)
+	class G_Bandanna_arctic: None
+	{
+		author = "enxyo";
+		_generalMacro="G_Bandanna_arctic";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+        displayname = "Bandanna Arctic";
+		model="\A3\Characters_F_Bootcamp\Guerrilla\g_bandana_clean.p3d";
+		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Bandana_clean_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\headgear\data\headgear_bandmask_arctic.paa"
+		};
+		mass=4;
+	};
+	
+	// Bandanna (Beast, Arctic)
+	class G_Bandanna_beast_arctic: G_Bandanna_arctic
+	{
+		author="enxyo";
+		_generalMacro="G_Bandanna_beast_arctic";
+		displayName="Bandanna (Beast, Arctic)";
+		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_BandMask_beast_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\headgear\data\headgear_bandmask_beast_arctic.paa"
+		};
+	};
+	
+	// Bandanna (Sport, Arctic)
+	class G_Bandanna_shades_arctic: G_Bandanna_arctic
+	{
+		author="enxyo";
+		_generalMacro="G_Bandanna_shades_arctic";
+		displayName="Bandanna (Sport, Arctic)";
+		model="\A3\Characters_F_Bootcamp\Guerrilla\g_bandana_sport.p3d";
+		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Bandana_sport_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\headgear\data\headgear_bandmask_arctic.paa",
+			"\a3\characters_f\heads\glasses\data\sunglasses_sport_4_ca.paa"
+		};
+		mass=6;
+	};	
 };
