@@ -248,7 +248,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\a3\characters_f_bootcamp\guerrilla\data\headgear_balaclava_blk_co.paa" // TODO
+			"\snow_camo\addons\headgear\data\headgear_balaclava_arctic.paa"
 		};
 		identityTypes[]={};
 		mass=6;
@@ -269,8 +269,8 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\a3\characters_f_bootcamp\guerrilla\data\headgear_balaclava_blk_co.paa", // TODO
-			"\a3\characters_f\heads\glasses\data\g_combat_ca.paa" // TODO
+			"\snow_camo\addons\headgear\data\headgear_balaclava_arctic.paa",
+			"\snow_camo\addons\headgear\data\g_combat_arctic_w.paa"
 		};
 		mass=10;
 	};

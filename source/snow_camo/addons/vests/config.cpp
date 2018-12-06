@@ -22,7 +22,9 @@ class CfgPatches
 		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content unlocking.
 		units[] = {};
 		// List of weapons (CfgWeapons classes) contained in the addon.
-		weapons[] = {V_PlateCarrier2_arctic};
+		weapons[] = {
+			"V_PlateCarrier2_arctic"
+		};
 	};
 };
 
