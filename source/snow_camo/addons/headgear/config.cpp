@@ -22,7 +22,17 @@ class CfgPatches
 		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content unlocking.
 		units[] = {};
 		// List of weapons (CfgWeapons classes) contained in the addon.
-		weapons[] = {};
+		weapons[] = {
+			"H_HelmetB_arctic_snakeskin",
+			"H_HelmetSpecB_arctic_paint2",
+			"G_Balaclava_TI_arctic",
+			"G_Balaclava_TI_G_arctic",
+			"G_Bandanna_arctic",
+			"G_Bandanna_beast_arctic",
+			"G_Bandanna_shades_arctic",
+			"G_Balaclava_arctic",
+			"G_Balaclava_G_arctic"
+		};
 	};
 };
 
@@ -114,7 +124,7 @@ class CfgWeapons
 	};
 };
 
-class cfg Glasses
+class CfgGlasses
 {
     class None;
 	
@@ -141,6 +151,29 @@ class cfg Glasses
         mass = 6;
 		DLC="Expansion";
     };
+	
+	// Stealth Balaclava (Arctic, Googles)
+	class G_Balaclava_TI_G_arctic: G_Balaclava_TI_arctic
+	{
+		author="enxyo";
+		_generalMacro="G_Balaclava_TI_G_arctic";
+		displayName="Stealth Balaclava (Arctic, Googles)";
+		model="\A3\Characters_F_Exp\BLUFOR\G_Balaclava_TI_G_F.p3d";
+		picture="\A3\Characters_F_Exp\BLUFOR\Data\UI\icon_G_Balaclava_TI_G_tna_F_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\headgear\data\g_balaclava_ti_arctic.paa",
+			"\snow_camo\addons\headgear\data\g_combat_arctic_w.paa" // TODO
+		};
+		identityTypes[]={};
+		mass=10;
+		DLC="Expansion";
+	};
 
 	// Bandanna (Arctic)
 	class G_Bandanna_arctic: None
@@ -196,5 +229,49 @@ class cfg Glasses
 			"\a3\characters_f\heads\glasses\data\sunglasses_sport_4_ca.paa"
 		};
 		mass=6;
-	};	
+	};
+	
+	// Balaclava (Arctic)
+	class G_Balaclava_arctic: None
+	{
+		author="enxyo";
+		_generalMacro="G_Balaclava_arctic";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="Balaclava (Arctic)";
+		model="\A3\Characters_F_Bootcamp\Guerrilla\g_balaclava_clean.p3d";
+		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\a3\characters_f_bootcamp\guerrilla\data\headgear_balaclava_blk_co.paa" // TODO
+		};
+		identityTypes[]={};
+		mass=6;
+	};
+	
+	// Balaclava (Arctic, Googles)
+	class G_Balaclava_G_arctic: G_Balaclava_arctic
+	{
+		author="enxyo";
+		_generalMacro="G_Balaclava_G_arctic";
+		displayName="Balaclava (Arctic, Googles)";
+		model="\A3\Characters_F_Bootcamp\Guerrilla\g_balaclava_combat.p3d";
+		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_combat_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\a3\characters_f_bootcamp\guerrilla\data\headgear_balaclava_blk_co.paa", // TODO
+			"\a3\characters_f\heads\glasses\data\g_combat_ca.paa" // TODO
+		};
+		mass=10;
+	};
 };
