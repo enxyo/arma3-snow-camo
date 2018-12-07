@@ -22,7 +22,12 @@ class CfgPatches
 		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content unlocking.
 		units[] = {};
 		// List of weapons (CfgWeapons classes) contained in the addon.
-		weapons[] = {};
+		weapons[] = {
+			"B_carryall_arctic",
+			"B_carryall_arctic_medical",
+			"B_kitbag_arctic",
+			"B_kitbag_arctic_medical"
+		};
 	};
 };
 
@@ -37,11 +42,21 @@ class cfgVehicles
         scope = 2;
 		_generalMacro="B_carryall_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
-        displayName = "Carryall Arctic";
+        displayName = "Carryall (Arctic)";
         picture = "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic.paa"};
         maximumLoad = 320;
         mass = 60;
+    };
+	
+	// carryall arctic medical
+	class B_carryall_arctic_medical: B_carryall_arctic
+    {
+        author = "enxyo";
+        scope = 2;
+		_generalMacro="B_carryall_arctic_medical";
+        displayName = "Carryall (Arctic, Medical)";
+        hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic_medical.paa"};
     };
 	
 	// kitbag arctic
@@ -51,11 +66,21 @@ class cfgVehicles
         scope = 2;
 		_generalMacro="B_kitbag_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
-        displayName = "Carryall Arctic";
+        displayName = "Kitbag (Arctic)";
         picture = "\A3\Weapons_F\ammoboxes\bags\data\ui\icon_B_C_Kitbag_rgr";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_kitbag_arctic.paa"};
         maximumLoad = 280;
         mass = 50;
+    };
+	
+	// kitbag arctic medical
+	class B_kitbag_arctic_medical: B_kitbag_arctic
+    {
+        author = "enxyo";
+        scope = 2;
+		_generalMacro="B_kitbag_arctic_medical";
+		displayName = "Kitbag (Arctic, Medical)";
+        hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_kitbag_arctic_medical.paa"};
     };
 	
 };

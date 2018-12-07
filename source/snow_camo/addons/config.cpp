@@ -85,7 +85,6 @@ class CfgWeapons
 		{
 			"\snow_camo\addons\data\clothing1_arctic.paa"
 		};
-		DLC="Expansion";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";

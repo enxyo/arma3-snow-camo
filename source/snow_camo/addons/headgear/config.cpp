@@ -116,7 +116,7 @@ class CfgWeapons
 				class Head
 				{
 					hitpointName="HitHead";
-					armor=10;
+					armor=6;
 					passThrough=0.5;
 				};
 			};
@@ -149,7 +149,6 @@ class CfgGlasses
 		};
         identityTypes[] = {};
         mass = 6;
-		DLC="Expansion";
     };
 	
 	// Stealth Balaclava (Arctic, Googles)
@@ -172,7 +171,6 @@ class CfgGlasses
 		};
 		identityTypes[]={};
 		mass=10;
-		DLC="Expansion";
 	};
 
 	// Bandanna (Arctic)

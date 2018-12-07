@@ -58,7 +58,7 @@ class CfgWeapons
 		{
 			uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest01";
 			containerClass="Supply140";
-			mass=100;
+			mass=140;
 			hiddenSelections[]=
 			{
 				"camo"
@@ -68,8 +68,8 @@ class CfgWeapons
 				class Neck
 				{
 					hitpointName="HitNeck"; // reference to the hit point class defined in the man base class
-					armor=0; // addition to armor of referenced hitpoint
-					passThrough=1; // multiplier of base passThrough defined in referenced hitpoint
+					armor=12; // addition to armor of referenced hitpoint
+					passThrough=0.4; // multiplier of base passThrough defined in referenced hitpoint
 				};
 				class Arms
 				{
@@ -80,20 +80,20 @@ class CfgWeapons
 				class Chest
 				{
 					hitpointName="HitChest";
-					armor=20;
-					passThrough=0.2;
+					armor=28;
+					passThrough=0.1;
 				};
 				class Diaphragm
 				{
 					hitpointName="HitDiaphragm";
-					armor=20;
-					passThrough=0.2;
+					armor=31;
+					passThrough=0.1;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
-					armor=20;
-					passThrough=0.2;
+					armor=31;
+					passThrough=0.1;
 				};
 				class Pelvis
 				{
@@ -104,7 +104,7 @@ class CfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					passThrough=0.2;
+					passThrough=0.1;
 				};
 			};
 		};
