@@ -43,7 +43,7 @@ class CfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
 		displayName="Plate Carrier 2 Arctic";
-		picture="\A3\Characters_F\data\ui\icon_V_plate_carrier_2_blk_CA.paa"; // TODO
+		picture="\snow_camo\addons\data\ui\logo_64_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\equip_b_vest01.p3d";
 		descriptionShort="$STR_A3_SP_AL_IV"; // TODO
 		hiddenSelections[]=
