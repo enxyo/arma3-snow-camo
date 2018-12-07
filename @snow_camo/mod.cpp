@@ -7,9 +7,9 @@ picture = "\snow_camo\addons\data\ui\picture.paa";
 /// Display next to the item added by the mod
 logoSmall = "\snow_camo\addons\data\ui\logo_64_w_t.paa";
 /// Logo displayed in the main menu
-logo = "\snow_camo\addons\data\ui\logo_128.paa";
+logo = "\snow_camo\addons\data\ui\logo_128_w_t.paa";
 /// Change the logo When the mouse is over, in the main menu of Arma 3
-logoOver = "\snow_camo\addons\data\ui\logo_128.paa";
+logoOver = "\snow_camo\addons\data\ui\logo_128_w_t.paa";
 /// Website URL, that can accessed from the mod data
 action = "https://github.com/enxyo/arma3-snow-camo";
 /// Tool tip displayed when the mouse is left over, in the main menu of Arma 3
