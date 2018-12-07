@@ -43,7 +43,7 @@ class cfgVehicles
 		_generalMacro="B_carryall_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
         displayName = "Carryall (Arctic)";
-        picture = "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+        picture = "\snow_camo\addons\data\ui\logo_128_t.paa";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic.paa"};
         maximumLoad = 320;
         mass = 60;
@@ -67,7 +67,7 @@ class cfgVehicles
 		_generalMacro="B_kitbag_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
         displayName = "Kitbag (Arctic)";
-        picture = "\A3\Weapons_F\ammoboxes\bags\data\ui\icon_B_C_Kitbag_rgr";
+        picture = "\snow_camo\addons\data\ui\logo_128_t.paa";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_kitbag_arctic.paa"};
         maximumLoad = 280;
         mass = 50;

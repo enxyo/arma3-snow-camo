@@ -75,7 +75,7 @@ class CfgWeapons
 		author="$STR_A3_Bohemia_Interactive"; // TODO
 		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
 		displayName="CTRG Arctic Uniform";
-		picture="\A3\characters_f_exp\BLUFOR\data\ui\icon_U_B_CTRG_Soldier_urb_1_F_ca.paa"; // TODO
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		hiddenSelections[]=
 		{

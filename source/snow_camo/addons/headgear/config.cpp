@@ -50,7 +50,7 @@ class CfgWeapons
 		weaponPoolAvailable=1;
 		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
 		displayName="Arctic Helmet Snakeskin";
-		picture="\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa"; // TODO
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
 		hiddenSelections[]=
 		{
@@ -91,7 +91,7 @@ class CfgWeapons
 		weaponPoolAvailable=1;
 		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
 		displayName="Arctic Helmet";
-		picture="\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa"; // TODO
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
 		hiddenSelections[]=
 		{
@@ -138,7 +138,7 @@ class CfgGlasses
 		scopeArsenal=2;
         displayname = "Stealth Balaclava (Arctic)";
         model = "\A3\Characters_F_Exp\BLUFOR\G_Balaclava_TI_F.p3d";
-        picture = "\A3\Characters_F_Exp\BLUFOR\Data\UI\icon_G_Balaclava_TI_tna_F_ca.paa";
+        picture = "\snow_camo\addons\data\ui\logo_128_t.paa";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -158,7 +158,7 @@ class CfgGlasses
 		_generalMacro="G_Balaclava_TI_G_arctic";
 		displayName="Stealth Balaclava (Arctic, Googles)";
 		model="\A3\Characters_F_Exp\BLUFOR\G_Balaclava_TI_G_F.p3d";
-		picture="\A3\Characters_F_Exp\BLUFOR\Data\UI\icon_G_Balaclava_TI_G_tna_F_ca.paa";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -183,7 +183,7 @@ class CfgGlasses
 		scopeArsenal=2;
         displayname = "Bandanna Arctic";
 		model="\A3\Characters_F_Bootcamp\Guerrilla\g_bandana_clean.p3d";
-		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Bandana_clean_ca.paa";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -201,7 +201,7 @@ class CfgGlasses
 		author="enxyo";
 		_generalMacro="G_Bandanna_beast_arctic";
 		displayName="Bandanna (Beast, Arctic)";
-		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_BandMask_beast_ca.paa";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"\snow_camo\addons\headgear\data\headgear_bandmask_beast_arctic.paa"
@@ -215,7 +215,7 @@ class CfgGlasses
 		_generalMacro="G_Bandanna_shades_arctic";
 		displayName="Bandanna (Sport, Arctic)";
 		model="\A3\Characters_F_Bootcamp\Guerrilla\g_bandana_sport.p3d";
-		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Bandana_sport_ca.paa";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -239,7 +239,7 @@ class CfgGlasses
 		scopeArsenal=2;
 		displayName="Balaclava (Arctic)";
 		model="\A3\Characters_F_Bootcamp\Guerrilla\g_balaclava_clean.p3d";
-		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -259,7 +259,7 @@ class CfgGlasses
 		_generalMacro="G_Balaclava_G_arctic";
 		displayName="Balaclava (Arctic, Googles)";
 		model="\A3\Characters_F_Bootcamp\Guerrilla\g_balaclava_combat.p3d";
-		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_combat_ca.paa";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
