@@ -15,7 +15,7 @@ class CfgPatches
 		url = "https://github.com/enxyo/arma3-snow-camo";
 
 		// Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game.
-		requiredVersion = 1.86; 
+		requiredVersion = 1.86;
 		// Required addons, used for setting load order.
 		// When any of the addons is missing, pop-up warning will appear when launching the game.
 		requiredAddons[] = {"A3_Weapons_F"};
@@ -34,11 +34,12 @@ class CfgPatches
 class cfgVehicles
 {
     class Bag_Base;
-    
+
 	// carryall arctic
 	class B_carryall_arctic: Bag_Base
     {
         author = "enxyo";
+		mapSize=0.55000001;
         scope = 2;
 		_generalMacro="B_carryall_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
@@ -48,7 +49,7 @@ class cfgVehicles
         maximumLoad = 320;
         mass = 60;
     };
-	
+
 	// carryall arctic medical
 	class B_carryall_arctic_medical: B_carryall_arctic
     {
@@ -58,11 +59,12 @@ class cfgVehicles
         displayName = "Carryall (Arctic, Medical)";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic_medical.paa"};
     };
-	
+
 	// kitbag arctic
 	class B_kitbag_arctic: Bag_Base
     {
         author = "enxyo";
+		mapSize=0.55000001;
         scope = 2;
 		_generalMacro="B_kitbag_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
@@ -72,7 +74,7 @@ class cfgVehicles
         maximumLoad = 280;
         mass = 50;
     };
-	
+
 	// kitbag arctic medical
 	class B_kitbag_arctic_medical: B_kitbag_arctic
     {
@@ -82,5 +84,5 @@ class cfgVehicles
 		displayName = "Kitbag (Arctic, Medical)";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_kitbag_arctic_medical.paa"};
     };
-	
+
 };
