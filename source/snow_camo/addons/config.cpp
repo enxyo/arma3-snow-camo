@@ -31,7 +31,7 @@ class CfgVehicles
 	class B_CTRG_Soldier_base_F;                     // For inheritance to work, the base class has to be defined.
     class B_CTRG_Soldier_arctic_1_F: B_CTRG_Soldier_base_F       // Define of a new class, which parameters are inherited from B_Soldier_base_F, with exception of those defined below.
     {
-        author = "Splendid Modder";         // The name of the author of the asset, which is displayed in the editor.
+        author = "enxyo";         // The name of the author of the asset, which is displayed in the editor.
         _generalMacro="B_CTRG_Soldier_arctic_1_F";
 		faction="BLU_CTRG_F";
 		scope = 2;                          // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
@@ -62,6 +62,19 @@ class CfgVehicles
         linkedItems[] = {V_PlateCarrier1_rgr, H_HelmetB, ItemMap, ItemCompass, ItemWatch, ItemRadio, NVGoggles};               // Which items the character has.
         respawnLinkedItems[] = {V_PlateCarrier1_rgr, H_HelmetB, ItemMap, ItemCompass, ItemWatch, ItemRadio, NVGoggles};        // Which items the character respawns with.
     };
+
+	class B_ghillie_base_F;
+	class B_ghillie_arctic_1_F: B_ghillie_base_F       // Define of a new class, which parameters are inherited from B_Soldier_base_F, with exception of those defined below.
+    {
+        author = "enxyo";         // The name of the author of the asset, which is displayed in the editor.
+        _generalMacro="B_ghillie_arctic_1_F";
+		faction="BLU_CTRG_F";
+		scope = 2;                          // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
+        scopeCurator = 2;                   // 2 = class is available in Zeus; 0 = class is unavailable in Zeus.
+        scopeArsenal = 2;                   // 2 = class is available in the Virtual Arsenal; 0 = class is unavailable in the Virtual Arsenal.
+        uniformClass = "U_B_FullGhillie_arctic_1_F";                        	 // This links this soldier to a particular uniform. For the details, see below.
+    };
+
 };
 
 class CfgWeapons
@@ -72,7 +85,7 @@ class CfgWeapons
 	// arctic CTRG uniform
 	class U_B_CTRG_Soldier_arctic_1_F: Uniform_Base
 	{
-		author="enxyo"; // TODO
+		author="enxyo";
 		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
 		displayName="CTRG Stealth Uniform (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
@@ -89,6 +102,35 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="B_CTRG_Soldier_arctic_1_F";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
+	// arctic full ghillie
+	class U_B_FullGhillie_arctic_1_F: Uniform_Base
+	{
+		author="enxyo";
+		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
+		displayName="Full Ghillie (Arctic)";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
+		model="\A3\Characters_F_Mark\BLUFOR\b_fullghillie_f.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\data\ghillie_coverall_arctic.paa",
+			"\snow_camo\addons\data\ghillie_threads_arcitc.paa",
+			"\snow_camo\addons\data\ghillie_threads_5lod_arctic.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="U_B_FullGhillie_arctic_1_F";
 			containerClass="Supply40";
 			mass=40;
 		};
