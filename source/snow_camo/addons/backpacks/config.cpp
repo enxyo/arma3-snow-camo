@@ -35,15 +35,16 @@ class cfgVehicles
 {
     class Bag_Base;
 
+	class B_Carryall_Base;
+
 	// carryall arctic
-	class B_carryall_arctic: Bag_Base
+	class B_carryall_arctic: B_Carryall_Base
     {
         author = "enxyo";
-		mapSize=0.55000001;
         scope = 2;
 		_generalMacro="B_carryall_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
-        displayName = "Carryall (Arctic)";
+        displayName = "Carryall Backpack (Arctic)";
         picture = "\snow_camo\addons\data\ui\logo_128_t.paa";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic.paa"};
         maximumLoad = 320;
@@ -56,7 +57,7 @@ class cfgVehicles
         author = "enxyo";
         scope = 2;
 		_generalMacro="B_carryall_arctic_medical";
-        displayName = "Carryall (Arctic, Medical)";
+        displayName = "Carryall Backpack (Arctic, Medical)";
         hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic_medical.paa"};
     };
 
@@ -64,7 +65,6 @@ class cfgVehicles
 	class B_kitbag_arctic: Bag_Base
     {
         author = "enxyo";
-		mapSize=0.55000001;
         scope = 2;
 		_generalMacro="B_kitbag_arctic";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
