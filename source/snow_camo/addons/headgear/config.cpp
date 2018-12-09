@@ -15,7 +15,7 @@ class CfgPatches
 		url = "https://github.com/enxyo/arma3-snow-camo";
 
 		// Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game.
-		requiredVersion = 1.86; 
+		requiredVersion = 1.86;
 		// Required addons, used for setting load order.
 		// When any of the addons is missing, pop-up warning will appear when launching the game.
 		requiredAddons[] = {"A3_Characters_F","A3_Characters_F_Exp"};
@@ -40,16 +40,16 @@ class CfgWeapons
 {
 	class ItemCore;
 	class HeadgearItem;
-	
+
 	// arctic snakeskin helmet
 	class H_HelmetB_arctic_snakeskin : ItemCore
 	{
-		author="$STR_A3_Bohemia_Interactive"; // TODO
+		author="enxyo"; // TODO
 		_generalMacro="H_HelmetB_arctic_snakeskin";
 		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
 		weaponPoolAvailable=1;
 		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
-		displayName="Arctic Helmet Snakeskin";
+		displayName="Combat Helmet (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
 		hiddenSelections[]=
@@ -81,16 +81,16 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 	// arctic base helmet
 	class H_HelmetSpecB_arctic_paint2 : ItemCore
 	{
-		author="$STR_A3_Bohemia_Interactive"; // TODO
+		author="enxyo"; // TODO
 		_generalMacro="H_HelmetSpecB_arctic_paint2";
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
-		displayName="Arctic Helmet";
+		displayName="Enhanced Combat Helmet (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
 		hiddenSelections[]=
@@ -127,7 +127,7 @@ class CfgWeapons
 class CfgGlasses
 {
     class None;
-	
+
 	// Stealth Balaclava (Arctic)
     class G_Balaclava_TI_arctic: None
     {
@@ -150,7 +150,7 @@ class CfgGlasses
         identityTypes[] = {};
         mass = 6;
     };
-	
+
 	// Stealth Balaclava (Arctic, Googles)
 	class G_Balaclava_TI_G_arctic: G_Balaclava_TI_arctic
 	{
@@ -194,7 +194,7 @@ class CfgGlasses
 		};
 		mass=4;
 	};
-	
+
 	// Bandanna (Beast, Arctic)
 	class G_Bandanna_beast_arctic: G_Bandanna_arctic
 	{
@@ -207,7 +207,7 @@ class CfgGlasses
 			"\snow_camo\addons\headgear\data\headgear_bandmask_beast_arctic.paa"
 		};
 	};
-	
+
 	// Bandanna (Sport, Arctic)
 	class G_Bandanna_shades_arctic: G_Bandanna_arctic
 	{
@@ -228,7 +228,7 @@ class CfgGlasses
 		};
 		mass=6;
 	};
-	
+
 	// Balaclava (Arctic)
 	class G_Balaclava_arctic: None
 	{
@@ -251,7 +251,7 @@ class CfgGlasses
 		identityTypes[]={};
 		mass=6;
 	};
-	
+
 	// Balaclava (Arctic, Googles)
 	class G_Balaclava_G_arctic: G_Balaclava_arctic
 	{

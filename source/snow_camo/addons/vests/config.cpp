@@ -15,7 +15,7 @@ class CfgPatches
 		url = "https://github.com/enxyo/arma3-snow-camo";
 
 		// Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game.
-		requiredVersion = 1.86; 
+		requiredVersion = 1.86;
 		// Required addons, used for setting load order.
 		// When any of the addons is missing, pop-up warning will appear when launching the game.
 		requiredAddons[] = {"A3_Characters_F"};
@@ -33,16 +33,16 @@ class CfgWeapons
 	class ItemCore;
 	class Vest_Camo_Base;
 	class VestItem;
-	
+
 	// Plate Carrier 2 Arctic
 	class V_PlateCarrier2_arctic: Vest_Camo_Base
 	{
-		author="$STR_A3_Bohemia_Interactive"; // TODO
+		author="enxyo"; // TODO
 		_generalMacro="V_PlateCarrier2_arctic"; // debug?
 		scope=2; // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
-		displayName="Plate Carrier 2 Arctic";
+		displayName="Carrier Rig (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\equip_b_vest01.p3d";
 		descriptionShort="$STR_A3_SP_AL_IV"; // TODO

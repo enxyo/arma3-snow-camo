@@ -15,7 +15,7 @@ class CfgPatches
 		url = "https://github.com/enxyo/arma3-snow-camo";
 
 		// Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game.
-		requiredVersion = 1.86; 
+		requiredVersion = 1.86;
 		// Required addons, used for setting load order.
 		// When any of the addons is missing, pop-up warning will appear when launching the game.
 		requiredAddons[] = {"A3_Characters_F_BLUFOR","A3_Characters_F_Exp"};
@@ -61,20 +61,20 @@ class CfgVehicles
         respawnMagazines[] = {)};        		// What ammunition the character respawns with.
         linkedItems[] = {V_PlateCarrier1_rgr, H_HelmetB, ItemMap, ItemCompass, ItemWatch, ItemRadio, NVGoggles};               // Which items the character has.
         respawnLinkedItems[] = {V_PlateCarrier1_rgr, H_HelmetB, ItemMap, ItemCompass, ItemWatch, ItemRadio, NVGoggles};        // Which items the character respawns with.
-    };	
+    };
 };
-	
+
 class CfgWeapons
-{	
+{
 	class UniformItem;
 	class Uniform_Base;
-	
+
 	// arctic CTRG uniform
 	class U_B_CTRG_Soldier_arctic_1_F: Uniform_Base
 	{
-		author="$STR_A3_Bohemia_Interactive"; // TODO
+		author="enxyo"; // TODO
 		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
-		displayName="CTRG Arctic Uniform";
+		displayName="CTRG Stealth Uniform (Arctic)s";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		hiddenSelections[]=
