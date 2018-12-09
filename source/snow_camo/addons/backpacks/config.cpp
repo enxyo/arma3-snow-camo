@@ -37,29 +37,28 @@ class cfgVehicles
 
 	class B_Carryall_Base;
 
-	// carryall arctic
+	// Carryall Backpack (Arctic)
 	class B_carryall_arctic: B_Carryall_Base
-    {
-        author = "enxyo";
-        scope = 2;
+	{
+		author = "enxyo";
+		scope = 2;
 		_generalMacro="B_carryall_arctic";
-        model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
-        displayName = "Carryall Backpack (Arctic)";
-        picture = "\snow_camo\addons\data\ui\logo_128_t.paa";
-        hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic.paa"};
-        maximumLoad = 320;
-        mass = 60;
-    };
+		displayName = "Carryall Backpack (Arctic)";
+		picture = "\snow_camo\addons\data\ui\logo_128_t.paa";
+		hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\pb_carryall_arctic.paa"};
+		maximumLoad = 320;
+		mass = 60;
+	}
 
-	// carryall arctic medical
+	// Carryall Backpack (Arctic, Medical)
 	class B_carryall_arctic_medical: B_carryall_arctic
-    {
-        author = "enxyo";
-        scope = 2;
+	{
+		author = "enxyo";
+		scope = 2;
 		_generalMacro="B_carryall_arctic_medical";
-        displayName = "Carryall Backpack (Arctic, Medical)";
-        hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\bp_carryall_arctic_medical.paa"};
-    };
+		displayName = "Carryall Backpack (Arctic)";
+		hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\pb_carryall_arctic_medical.paa"};
+	}
 
 	// kitbag arctic
 	class B_kitbag_arctic: Bag_Base
