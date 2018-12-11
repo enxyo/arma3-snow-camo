@@ -31,7 +31,9 @@ class CfgPatches
 			"G_Bandanna_beast_arctic",
 			"G_Bandanna_shades_arctic",
 			"G_Balaclava_arctic",
-			"G_Balaclava_G_arctic"
+			"G_Balaclava_G_arctic",
+			"H_HelmetO_ViperSP_arctic",
+			"H_HelmetSpecO_arctic"
 		};
 	};
 };
@@ -122,6 +124,100 @@ class CfgWeapons
 			};
 		};
 	};
+
+	// arctic viper helmet
+	class H_HelmetO_ViperSP_arctic : ItemCore
+	{
+		author="enxyo"; // TODO
+		_generalMacro="H_HelmetO_ViperSP_arctic";
+		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
+		weaponPoolAvailable=1;
+		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
+		displayName="Viper Helmet (Arctic)";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
+		model="\A3\Characters_F_Exp\OPFOR\headgear_o_vipersp.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\headgear\data\headgear_vipersp_arctic.paa"
+		};
+		descriptionShort="$STR_A3_SP_AL_II"; // TODO
+		class ItemInfo: HeadgearItem
+		{
+			mass=80;
+			uniformModel="\A3\Characters_F_Exp\OPFOR\headgear_o_vipersp.p3d";
+			modelSides[]={0,3};
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			class HitpointsProtectionInfo //more info at: https://community.bistudio.com/wiki/Arma_3_Soldier_Protection
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=12;
+					passThrough=0.5;
+				};
+				class Face
+				{
+					hitpointName="HitFace";
+					armor=8;
+					passThrough=0.5;
+				};
+			};
+		};
+		subItems[]=
+		{
+			"Integrated_NVG_TI_1_F"
+		};
+	};
+
+	// arctic base helmet
+	class H_HelmetSpecO_arctic : ItemCore
+	{
+		author="enxyo"; // TODO
+		_generalMacro="H_HelmetSpecO_arctic";
+		scope=2;
+		weaponPoolAvailable=1;
+		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
+		displayName="Combat Helmet (Arctic)"; //TODO
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
+		model="\A3\Characters_F\OPFOR\headgear_o_helmet_ballistic_spec.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\headgear\data\tech_arctic.paa"
+		};
+		descriptionShort="$STR_A3_SP_AL_II";
+		class ItemInfo: HeadgearItem
+		{
+			mass=50;
+			uniformModel="\A3\Characters_F\OPFOR\headgear_o_helmet_ballistic_spec.p3d";
+			modelSides[]={0,3};
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=10;
+					passThrough=0.5;
+				};
+			};
+		};
+	};
+
+
 };
 
 class CfgGlasses
