@@ -109,4 +109,159 @@ class CfgWeapons
 			};
 		};
 	};
+
+	// Plate Carrier 1 Arctic
+	class V_PlateCarrier1_arctic: Vest_Camo_Base
+	{
+		author="enxyo"; // TODO
+		_generalMacro="V_PlateCarrier1_arctic"; // debug?
+		scope=2; // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
+		weaponPoolAvailable = 1;
+		allowedSlots[] = {901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
+		displayName="Carrier Rig 1 (Arctic)";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
+		model="\A3\Characters_F\BLUFOR\equip_b_vest02.p3d";
+		descriptionShort="$STR_A3_SP_AL_IV"; // TODO
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\vests\data\vest2_arctic.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest02.p3d";
+			containerClass="Supply140";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			class HitpointsProtectionInfo //more info at: https://community.bistudio.com/wiki/Arma_3_Soldier_Protection
+			{
+				class Neck
+				{
+					hitpointName="HitNeck"; // reference to the hit point class defined in the man base class
+					armor=12; // addition to armor of referenced hitpoint
+					passThrough=0.4; // multiplier of base passThrough defined in referenced hitpoint
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=0;
+					passThrough=1;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=28;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=31;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=31;
+					passThrough=0.1;
+				};
+				class Pelvis
+				{
+					hitpointName="HitPelvis";
+					armor=0;
+					passThrough=1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+
+	// Chest Rig 1 Arctic
+	class V_ChestRig1_arctic: Vest_Camo_Base
+	{
+		author="enxyo"; // TODO
+		_generalMacro="V_ChestRig1_arctic"; // debug?
+		scope=2; // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
+		weaponPoolAvailable = 1;
+		allowedSlots[] = {901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
+		displayName="Chest Rig (Arctic)";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
+		model="\A3\Characters_F\Common\equip_chestrig";
+		descriptionShort="$STR_A3_SP_AL_IV"; // TODO
+		hiddenSelections[]=
+		{
+			"camo1",
+			"Camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\vests\data\chestrig1_c1_arctic.paa",
+			"\snow_camo\addons\vests\data\chestrig1_c2_arctic.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\A3\Characters_F\Common\equip_chestrig.p3d";
+			containerClass="Supply140";
+			mass=20;
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			class HitpointsProtectionInfo //more info at: https://community.bistudio.com/wiki/Arma_3_Soldier_Protection
+			{
+				class Neck
+				{
+					hitpointName="HitNeck"; // reference to the hit point class defined in the man base class
+					armor=0; // addition to armor of referenced hitpoint
+					passThrough=1; // multiplier of base passThrough defined in referenced hitpoint
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=0;
+					passThrough=1;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=0;
+					passThrough=1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=0;
+					passThrough=1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=0;
+					passThrough=1;
+				};
+				class Pelvis
+				{
+					hitpointName="HitPelvis";
+					armor=0;
+					passThrough=1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=1;
+				};
+			};
+		};
+	};
+
 };
