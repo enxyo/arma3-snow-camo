@@ -118,7 +118,7 @@ class CfgWeapons
 		scope=2; // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
-		displayName="Carrier Rig 1 (Arctic)";
+		displayName="Carrier Lite (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\equip_b_vest02.p3d";
 		descriptionShort="$STR_A3_SP_AL_IV"; // TODO
@@ -200,7 +200,7 @@ class CfgWeapons
 		descriptionShort="$STR_A3_SP_AL_IV"; // TODO
 		hiddenSelections[]=
 		{
-			"camo1",
+			"Camo1",
 			"Camo2"
 		};
 		hiddenSelectionsTextures[]=
@@ -215,7 +215,8 @@ class CfgWeapons
 			mass=20;
 			hiddenSelections[]=
 			{
-				"camo"
+				"Camo1",
+				"Camo2"
 			};
 			class HitpointsProtectionInfo //more info at: https://community.bistudio.com/wiki/Arma_3_Soldier_Protection
 			{
