@@ -133,7 +133,7 @@ class CfgWeapons
 		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
 		weaponPoolAvailable=1;
 		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
-		displayName="Viper Helmet (Arctic)";
+		displayName="Special Purpose Helmet (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F_Exp\OPFOR\headgear_o_vipersp.p3d";
 		hiddenSelections[]=
@@ -176,7 +176,7 @@ class CfgWeapons
 		};
 	};
 
-	// arctic base helmet
+	// arctic assassin helmet
 	class H_HelmetSpecO_arctic : ItemCore
 	{
 		author="enxyo"; // TODO
@@ -184,9 +184,9 @@ class CfgWeapons
 		scope=2;
 		weaponPoolAvailable=1;
 		allowedSlots[] = {701,901}; // This means the vest can be put into a backpack. (701 stands for vest, 801 stands for uniform, 901 stands for backpack)
-		displayName="Combat Helmet (Arctic)"; //TODO
+		displayName="Assassin Helmet (Arctic)"; //TODO
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
-		model="\A3\Characters_F\OPFOR\headgear_o_helmet_ballistic_spec.p3d";
+		model="\A3\Characters_F\OPFOR\headgear_o_helmet_ballistic_spec";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -199,7 +199,7 @@ class CfgWeapons
 		class ItemInfo: HeadgearItem
 		{
 			mass=50;
-			uniformModel="\A3\Characters_F\OPFOR\headgear_o_helmet_ballistic_spec.p3d";
+			uniformModel="\A3\Characters_F\OPFOR\headgear_o_helmet_ballistic_spec";
 			modelSides[]={0,3};
 			hiddenSelections[]=
 			{
