@@ -195,7 +195,7 @@ class CfgWeapons
 		{
 			"\snow_camo\addons\headgear\data\tech_arctic.paa"
 		};
-		descriptionShort="$STR_A3_SP_AL_II";
+		descriptionShort="$STR_A3_SP_AL_II"; // TODO
 		class ItemInfo: HeadgearItem
 		{
 			mass=50;
