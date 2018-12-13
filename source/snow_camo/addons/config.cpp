@@ -125,7 +125,7 @@ class CfgVehicles
 			threat[] = {1, 1, 0.8};             // Multiplier of the cost of the character in the eyes of soft, armoured and air enemies.
 			model = "\A3\characters_F\OPFOR\o_soldier_01.p3d";       	 // The path to the model this character uses.
 			uniformClass = "U_O_CombatUniform_arctic";                        	 // This links this soldier to a particular uniform. For the details, see below.
-			hiddenSelections[] = {"camo"};                             // List of model selections which can be changed with hiddenSelectionTextures[] and hiddenSelectionMaterials[] properties. If empty, model textures are used.
+			hiddenSelections[] = {"Camo1"};                             // List of model selections which can be changed with hiddenSelectionTextures[] and hiddenSelectionMaterials[] properties. If empty, model textures are used.
 			hiddenSelectionsTextures[] = {"\snow_camo\addons\data\u_o_combat1_arctic.paa"};        // The textures for the selections defined above. If empty, no texture is used.
 			canDeactivateMines = true;              // Can this character deactivate mines?
 			engineer = true;                        // Can this character repair vehicles?
@@ -212,7 +212,7 @@ class CfgWeapons
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]=
 		{
-			"camo"
+			"Camo1"
 		};
 		hiddenSelectionsTextures[]=
 		{
