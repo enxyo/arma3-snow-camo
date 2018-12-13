@@ -56,7 +56,7 @@ class cfgVehicles
 		author = "enxyo";
 		scope = 2;
 		_generalMacro="B_carryall_arctic_medical";
-		displayName = "Carryall Backpack (Arctic)";
+		displayName = "Carryall Backpack (Arctic, Medical)";
 		hiddenSelectionsTextures[]={"\snow_camo\addons\backpacks\data\pb_carryall_arctic_medical.paa"};
 	}
 
