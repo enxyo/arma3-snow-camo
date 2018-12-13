@@ -181,7 +181,7 @@ class CfgWeapons
 	{
 		author="enxyo"; // TODO
 		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
-		displayName="Arctic Viper Suit";
+		displayName="Special Purpose Suit (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]=
@@ -207,7 +207,7 @@ class CfgWeapons
 	{
 		author="enxyo"; // TODO
 		scope=2;  // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
-		displayName="Arctic Combat Uniform";
+		displayName="Fatigues (Arctic) [CSAT]";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]=
