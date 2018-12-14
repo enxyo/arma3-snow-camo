@@ -23,7 +23,9 @@ class CfgPatches
 		units[] = {};
 		// List of weapons (CfgWeapons classes) contained in the addon.
 		weapons[] = {
-			"V_PlateCarrier2_arctic"
+			"V_PlateCarrier2_arctic",
+			"V_PlateCarrier1_arctic",
+			"V_ChestRig1_arctic"
 		};
 	};
 };
@@ -52,13 +54,13 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\snow_camo\addons\vests\data\vest1_arctic.paa"
+			"\snow_camo\addons\vests\data\vests_arctic.paa"
 		};
 		class ItemInfo: VestItem
 		{
 			uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest01";
 			containerClass="Supply140";
-			mass=140;
+			mass=100;
 			hiddenSelections[]=
 			{
 				"camo"
@@ -68,8 +70,8 @@ class CfgWeapons
 				class Neck
 				{
 					hitpointName="HitNeck"; // reference to the hit point class defined in the man base class
-					armor=12; // addition to armor of referenced hitpoint
-					passThrough=0.4; // multiplier of base passThrough defined in referenced hitpoint
+					armor=0; // addition to armor of referenced hitpoint
+					passThrough=1; // multiplier of base passThrough defined in referenced hitpoint
 				};
 				class Arms
 				{
@@ -80,20 +82,20 @@ class CfgWeapons
 				class Chest
 				{
 					hitpointName="HitChest";
-					armor=28;
-					passThrough=0.1;
+					armor=20;
+					passThrough=0.2;
 				};
 				class Diaphragm
 				{
 					hitpointName="HitDiaphragm";
-					armor=31;
-					passThrough=0.1;
+					armor=20;
+					passThrough=0.2;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
-					armor=31;
-					passThrough=0.1;
+					armor=20;
+					passThrough=0.2;
 				};
 				class Pelvis
 				{
@@ -104,7 +106,7 @@ class CfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					passThrough=0.1;
+					passThrough=0.2;
 				};
 			};
 		};
@@ -128,7 +130,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\snow_camo\addons\vests\data\vest2_arctic.paa"
+			"\snow_camo\addons\vests\data\vests_arctic.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -144,8 +146,8 @@ class CfgWeapons
 				class Neck
 				{
 					hitpointName="HitNeck"; // reference to the hit point class defined in the man base class
-					armor=12; // addition to armor of referenced hitpoint
-					passThrough=0.4; // multiplier of base passThrough defined in referenced hitpoint
+					armor=0; // addition to armor of referenced hitpoint
+					passThrough=1; // multiplier of base passThrough defined in referenced hitpoint
 				};
 				class Arms
 				{
@@ -156,20 +158,20 @@ class CfgWeapons
 				class Chest
 				{
 					hitpointName="HitChest";
-					armor=28;
-					passThrough=0.1;
+					armor=16;
+					passThrough=0.3;
 				};
 				class Diaphragm
 				{
 					hitpointName="HitDiaphragm";
-					armor=31;
-					passThrough=0.1;
+					armor=16;
+					passThrough=0.3;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
-					armor=31;
-					passThrough=0.1;
+					armor=16;
+					passThrough=0.3;
 				};
 				class Pelvis
 				{
@@ -180,7 +182,7 @@ class CfgWeapons
 				class Body
 				{
 					hitpointName="HitBody";
-					passThrough=0.1;
+					passThrough=0.3;
 				};
 			};
 		};
@@ -206,7 +208,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\snow_camo\addons\vests\data\chestrig1_c1_arctic.paa",
-			"\snow_camo\addons\vests\data\chestrig1_c2_arctic.paa"
+			"\snow_camo\addons\vests\data\vests_arctic.paa"
 		};
 		class ItemInfo: VestItem
 		{
