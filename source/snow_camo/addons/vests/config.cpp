@@ -25,7 +25,8 @@ class CfgPatches
 		weapons[] = {
 			"V_PlateCarrier2_arctic",
 			"V_PlateCarrier1_arctic",
-			"V_ChestRig1_arctic"
+			"V_ChestRig1_arctic",
+			"V_PlateCarrierGL_arctic"
 		};
 	};
 };
@@ -266,5 +267,76 @@ class CfgWeapons
 			};
 		};
 	};
-
+	class V_PlateCarrierGL_arctic: Vest_NoCamo_Base
+	{
+		author="enxyo";
+		_generalMacro="V_PlateCarrierGL_arctic";
+		scope=2;
+		displayName="Plate Carrier GL (Arctic)";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
+		model="\A3\Characters_F\BLUFOR\equip_b_carrier_gl_rig.p3d";
+		descriptionShort="$STR_A3_SP_ER"; // TODO
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\vests\data\vests_arctic.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\A3\Characters_F\BLUFOR\equip_b_carrier_gl_rig.p3d";
+			containerClass="Supply140";
+			mass=100;
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=78;
+					passThrough=0.60000002;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=78;
+					passThrough=0.60000002;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Pelvis
+				{
+					hitpointName="HitPelvis";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.60000002;
+				};
+			};
+		};
+	};
 };
