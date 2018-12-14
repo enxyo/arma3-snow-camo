@@ -26,7 +26,8 @@ class CfgPatches
 			"V_PlateCarrier2_arctic",
 			"V_PlateCarrier1_arctic",
 			"V_ChestRig1_arctic",
-			"V_PlateCarrierGL_arctic"
+			"V_PlateCarrierGL_arctic",
+			"V_PlateCarrierSpec_arctic"
 		};
 	};
 };
@@ -35,6 +36,7 @@ class CfgWeapons
 {
 	class ItemCore;
 	class Vest_Camo_Base;
+	class Vest_NoCamo_Base;
 	class VestItem;
 
 	// Plate Carrier 2 Arctic
@@ -267,6 +269,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	// Plate Carrier GL (Arctic)
 	class V_PlateCarrierGL_arctic: Vest_NoCamo_Base
 	{
 		author="enxyo";
@@ -282,9 +286,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\snow_camo\addons\vests\data\vests_arctic.paa"
+			"\snow_camo\addons\vests\data\carrier_gl_rig_arctic.paa"
 		};
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			uniformModel="\A3\Characters_F\BLUFOR\equip_b_carrier_gl_rig.p3d";
 			containerClass="Supply140";
@@ -335,6 +339,75 @@ class CfgWeapons
 				{
 					hitpointName="HitBody";
 					passThrough=0.60000002;
+				};
+			};
+		};
+	};
+
+	// Plate Carrier GL (Arctic)
+	class V_PlateCarrierSpec_arctic: Vest_NoCamo_Base
+	{
+		author="enxyo";
+		_generalMacro="V_PlateCarrierSpec_arctic";
+		scope=2;
+		displayName="Plate Carrier GL (Artic)";
+		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
+		model="\A3\Characters_F\BLUFOR\equip_b_carrier_spec_rig.p3d";
+		DLC="Mark";
+		descriptionShort="$STR_A3_SP_AL_V"; // TODO
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\snow_camo\addons\vests\data\carrier_gl_rig_arctic.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\A3\Characters_F\BLUFOR\equip_b_carrier_spec_rig.p3d";
+			containerClass="Supply100";
+			mass=120;
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=24;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=24;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=24;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
 				};
 			};
 		};
