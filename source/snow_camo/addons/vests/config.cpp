@@ -276,7 +276,7 @@ class CfgWeapons
 		author="enxyo";
 		_generalMacro="V_PlateCarrierGL_arctic";
 		scope=2;
-		displayName="Plate Carrier GL (Arctic)";
+		displayName="Carrier GL Rig (Arctic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa"; // TODO
 		model="\A3\Characters_F\BLUFOR\equip_b_carrier_gl_rig.p3d";
 		descriptionShort="$STR_A3_SP_ER"; // TODO
@@ -350,7 +350,7 @@ class CfgWeapons
 		author="enxyo";
 		_generalMacro="V_PlateCarrierSpec_arctic";
 		scope=2;
-		displayName="Plate Carrier GL (Artic)";
+		displayName="Carrier Special Rig (Artic)";
 		picture="\snow_camo\addons\data\ui\logo_128_t.paa";
 		model="\A3\Characters_F\BLUFOR\equip_b_carrier_spec_rig.p3d";
 		DLC="Mark";
